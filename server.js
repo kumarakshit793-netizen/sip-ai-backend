@@ -11,7 +11,7 @@ app.post("/ask", async (req, res) => {
     if (!question) return res.status(400).json({ error: "No question provided" });
 
     try {
-        const apiKey = process.env.OPENAI_API_KEY;
+        const apiKey = process.env.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`,;
         const response = await fetch("https://api.openai.com/v1/chat/completions", {
             method: "POST",
             headers: {
